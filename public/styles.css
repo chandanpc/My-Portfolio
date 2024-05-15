@@ -19,11 +19,12 @@ body {
 header {
     display: flex;
     align-items: center;
-    text-align: left;
     margin-bottom: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+}
+
+.left-header, .right-header {
+    flex: 1;
+    padding: 10px;
 }
 
 header img.profile-img {
@@ -31,11 +32,16 @@ header img.profile-img {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.left-header {
+    text-align: left;
+    /* border-right: 2px solid #666; */
     margin-right: 20px;
 }
 
-header .header-content {
-    flex: 1;
+.right-header {
+    text-align: right;
 }
 
 header h1 {
@@ -53,6 +59,15 @@ header p {
     margin: 5px 0;
 }
 
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .content {
     display: flex;
 }
@@ -62,9 +77,9 @@ header p {
     width: 50%;
 }
 
-.left-column {
+/* .left-column {
     border-right: 2px solid #666;
-}
+} */
 
 section {
     margin-bottom: 20px;
@@ -104,11 +119,6 @@ ul {
     margin-bottom: 10px;
 }
 
-a {
-    color: #1a0dab;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+p {
+    margin: 5px 0;
 }
