@@ -4,102 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandan Gupta's Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        h1, h2, h3 {
-            margin-top: 0;
-        }
-        img {
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 1rem;
-        }
-        hr {
-            border: 0;
-            border-top: 1px solid #ccc;
-            margin: 1rem 0;
-        }
-        footer small {
-            font-size: 0.8rem;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Chandan Gupta</h1>
-    </header>
-    <main>
-        <img src="../assets/images/passsportphoto.JPEG" alt="my image" width="100" height="120">
-        <h2>Dedicated and responsible software engineer known for hard work. Strong expertise in software development, collaborating in cross-functional teams. Committed to delivering high-quality results and continuous learning.</h2>
-        <hr>
-        <section>
-            <h3>Education</h3>
-            <ul>
-                <li>B.E in Chemical Engineering from Jadavpur University (2015)</li>
-            </ul>
-            <hr>
-            <h3>Work Experience</h3>
-            <ul>
-                <li>
-                    <strong>Open Source Contribution</strong> (2022 - Present)
-                    <ul>
-                        <li>I am actively contributing to open source projects like Apache/Solaris, Spring-Projects</li>
+    <div class="resume">
+        <header>
+            <img src="../assets/images/passsportphoto.JPEG" alt="Chandan Gupta" class="profile-img">
+            <div class="header-content">
+                <h1>Chandan Gupta</h1>
+                <h2>Senior Software Developer</h2>
+                <p>Chennai, India</p>
+                <p><a href="mailto:chandangupta2593@gmail.com">chandangupta2593@gmail.com</a> | +91 8961114621</p>
+                <p><a href="https://in.linkedin.com/in/chandan-gupta-uc">LinkedIn</a> | <a href="https://github.com/chandanpc">GitHub</a></p>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="left-column">
+                <section>
+                    <h3>Professional Summary</h3>
+                    <p>Senior Software Developer with over 8 years of experience in full stack development, specializing in Java, Spring Boot, and PostgreSQL. Demonstrated ability in migrating legacy applications, developing robust solutions, and leading technical teams. Passionate about coding and problem-solving with a strong background in object-oriented design and SDLC.</p>
+                </section>
+
+                <section>
+                    <h3>Work Experience</h3>
+                    <div class="job">
+                        <h4>Full Stack Developer - Newt Global</h4>
+                        <p class="date-location"><em>July 2023 – Present, Chennai</em></p>
+                        <ul>
+                            <li>Led the development of DMAP, an in-house product for migrating legacy applications from Oracle DB to PostgreSQL.</li>
+                            <li>Utilized Java 17, Spring Boot 3, PostgreSQL, Python 3.9.7, Angular 14, Docker, and Jenkins.</li>
+                            <li>Designed solutions for handling procedure calls and query remediation using PostgreSQL JDBC driver.</li>
+                            <li>Developed Java services using Spoon and oratopg libraries for SQL query identification and remediation.</li>
+                            <li>Architected the centralization of DB instances from worker nodes to a master node.</li>
+                            <li>Created tools for Postgres Day2 Support, enabling DBAs to manage database performance and health, conduct backups, and restore database schemas and tables.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h4>Application Developer - Tata Consultancy Services</h4>
+                        <p class="date-location"><em>January 2016 – June 2023, Kolkata</em></p>
+                        <ul>
+                            <li><strong>BAGIC/BNH (2020-2023):</strong> Led data migration from client server to Maximus BaNCS server using Java 8, Spring Boot 3, Oracle PLSQL, JavaScript, jQuery, AJAX, and Kafka. Developed Java batches for generating renewal notices. Created REST APIs for policy renewal and cancellation features.</li>
+                            <li><strong>SingleSolution (2018-2020):</strong> Customized BaNCS products, monitored daily batches, and resolved tickets using Java 7, JS, JSP.</li>
+                            <li><strong>Mapfre (2016-2017):</strong> Developed UI for a monolith application using JSP, JavaScript, and jQuery. Implemented UI validations and AJAX functionalities.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Education</h3>
+                    <p><strong>B.E in Chemical Engineering</strong> - Jadavpur University, Kolkata (August 2011 – August 2015)</p>
+                    <p>Graduated with a 6.74 CGPA</p>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section>
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li><strong>Languages & Frameworks:</strong> Java, Spring Boot, Spring Framework, Python, JavaScript, Angular, TypeScript, NodeJS, Hibernate</li>
+                        <li><strong>Databases:</strong> PostgreSQL, Oracle PLSQL, RDBMS</li>
+                        <li><strong>Tools & Technologies:</strong> Docker, Kafka, JMS, Git, Jenkins, AWS</li>
+                        <li><strong>Methodologies:</strong> Microservices, Agile, SDLC</li>
                     </ul>
-                </li>
-                <li>
-                    <strong>IT Analyst</strong> (2021 - Present)
-                    <ul>
-                        <li>I have worked with Data Migration team where we migrated the client side legacy data to our database.</li>
-                        <li>I am part of Product support team where I worked on CRs and Tickets.</li>
-                        <li>Besides this, I have developed several functionalities and product enhancements like Batch for Renewal Notice document generation and Co-existence MDT syncup batch.</li>
-                    </ul>
-                </li>
-                <li><strong>System Engineer</strong> (2018 - 2021)</li>
-                <li><strong>Assistant System Engineer</strong> (2017 - 2018)</li>
-                <li>
-                    <strong>Assistant System Engineer Trainee</strong> (2016- 2017)
-                    <ul>
-                        <li>I was a part of support project which works with Domestic Electricity DISCOMs in SAP based Utility Domain. We resolved tickets.</li>
-                    </ul>
-                </li>
-            </ul>
-            <hr>
-            <h3>Skills</h3>
-            <hr>
-            <h3>Awards</h3>
-            <hr>
-            <h3>Certifications</h3>
-            <hr>
-            <h3><a href="./hobby.html">My Hobbies</a></h3>
-            <h3><a href="./contact.html">Contact Details</a></h3>
-        </section>
-    </main>
-    <footer> 
-        <small>© 2024 Chandan Gupta. All Rights Reserved.</small>
-    </footer>
+                </section>
+
+                <section>
+                    <h3>Volunteer Experience</h3>
+                    <p><strong>Teaching Staff</strong> - TCS Maitri (May 2016 – Present, Kolkata)</p>
+                    <p><strong>Teaching Staff</strong> - Salkia Vikram Vidyalaya (May 2013 – December 2016, Howrah)</p>
+                </section>
+
+                <section>
+                    <h3>Programming Languages</h3>
+                    <p>Java: Full Professional Proficiency</p>
+                    <p>PLSQL: Full Professional Proficiency</p>
+                    <p>JavaScript: Full Professional Proficiency</p>
+                    <p>Python: Full Professional Proficiency</p>
+                </section>
+
+                <section>
+                    <h3>Interests</h3>
+                    <p>Cricket, Volunteering</p>
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
