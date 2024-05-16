@@ -23,12 +23,10 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
 }
 
 .left-header, .right-header {
     flex: 1;
-    padding: 10px;
 }
 
 header img.profile-img {
@@ -36,12 +34,11 @@ header img.profile-img {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    margin: 0 20px;
 }
 
 .left-header {
     text-align: left;
-    /* border-right: 2px solid #666; */
-    margin-right: 20px;
 }
 
 .right-header {
@@ -56,11 +53,18 @@ header h1 {
 header h2 {
     margin: 5px 0;
     font-size: 1.2em;
-    color: #666;
+    color: #fff;
+}
+
+header p.summary {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #fff;
 }
 
 header p {
     margin: 5px 0;
+    color: #fff;
 }
 
 a {
@@ -78,51 +82,4 @@ a:hover {
 
 .left-column, .right-column {
     padding: 20px;
-    width: 50%;
-}
-
-/* .left-column {
-    border-right: 2px solid #666;
-} */
-
-section {
-    margin-bottom: 20px;
-}
-
-section h3 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #666;
-    padding-bottom: 5px;
-}
-
-section h4 {
-    margin: 10px 0 5px;
-}
-
-.job {
-    margin-bottom: 20px;
-}
-
-.job .date-location {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.skills-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.skills-list li {
-    margin-bottom: 10px;
-}
-
-p {
-    margin: 5px 0;
-}
+    width: 5
